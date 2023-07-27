@@ -18,7 +18,7 @@ Finish is destructor, so you can quit database connection there.
 
 Foo bar version of usage:
 
-```
+```javascript
 const inc = require('syncd_promise_loop')
 
 let loop = syncd({
