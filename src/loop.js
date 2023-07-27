@@ -5,7 +5,7 @@ class syncdPromiseWorker {
         this.hasArgs = false
         this.setWork(work)
         this.setThen(then)
-        this.good = true 
+        this.good = true
         this.markForRetry = false
         this._continueAfterResolving = []
     }
@@ -53,12 +53,13 @@ class syncdPromiseWorker {
                 this.loop.next(this.id)
             })
         }
-    } 
+    }
     rejectedPromiseHandling() {
             if(this.markForRetry) {
                 this.good = false
                 this.trueRetry()
             } else {
+                this.hasArgs = false
                 this.good = true
                 this.next()
             }
@@ -134,7 +135,7 @@ class syncdPromise {
                 },
                 rejected: (data, args, loop)=>{
                     console.error(`: > : Promise rejected in syncdPromise:`, data , args)
-                } 
+                }
             }
         }
         this._overToPromises = 0
@@ -185,7 +186,7 @@ class syncdPromise {
         return this
     }
     info(tick) {
-        this._tick = tick 
+        this._tick = tick
         return this
     }
     tickNow() {

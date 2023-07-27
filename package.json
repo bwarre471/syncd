@@ -1,6 +1,6 @@
 {
   "name": "syncd_promise_loop",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "This utility allows to limit parallel promises, relaunch them with same parameters and rate limit them.",
   "main": "./src/loop.js",
   "scripts": {
