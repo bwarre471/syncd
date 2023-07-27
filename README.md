@@ -1,4 +1,6 @@
-
+```
+npm i syncd_promise_loop
+```
 Allows execution of Promises in parallel workers, that can be limited by the count, or have certain limit which resets after time interval, it can be usefull for e.g. parsing megahuge csv into database, or simply downloading something rate limited.
 
 If you remove timeFrame and limitInTimeFrame parameters, it works without rate limits.
