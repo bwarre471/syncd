@@ -75,7 +75,7 @@ let loop = syncd({
             }
             }})
 
-        .info((data, loop)=>{
+        .info((loop)=>{
             loop.parameters.infoInterval
             console.info(`[ > ] Info triggered`)
         })
