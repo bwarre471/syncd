@@ -1,6 +1,4 @@
 
-** Syncd Promise Loop **
-
 Allows execution of Promises in parallel workers, that can be limited by the count, or have certain limit which resets after time interval, it can be usefull for e.g. parsing megahuge csv into database, or simply downloading something rate limited.
 
 If you remove timeFrame and limitInTimeFrame parameters, it works without rate limits.
@@ -15,7 +13,7 @@ Finish is destructor, so you can quit database connection there.
 
 Foo bar version of usage:
 
-```
+```javascript
 const inc = require('syncd_promise_loop')
 
 let loop = syncd({
